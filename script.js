@@ -1,12 +1,4 @@
-// A simple script to add interactivity (e.g., smooth scroll for navigation)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    });
-  });
-  
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Message sent successfully!');
+});
