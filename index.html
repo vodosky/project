@@ -5,10 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Consultancy Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-bar button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .search-bar button:hover {
+            background-color: #555;
+        }
+        .hero .cta-buttons {
+            margin-top: 20px;
+        }
+        .cta-buttons button {
+            padding: 15px 30px;
+            margin: 5px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .cta-buttons button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container" class="fullscreen">
             <h1 class="logo">Vix CONSULTANCY CO</h1>
             <nav class="nav">
                 <ul>
@@ -18,14 +60,25 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <!-- Search Bar with Icon -->
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search...">
+                <button type="button">
+                    <img src="https://img.icons8.com/ios/50/ffffff/search.png" alt="Search Icon" width="16" height="16">
+                </button>
+            </div>
         </div>
     </header>
 
     <section id="hero" class="hero">
         <div class="container">
-            <h2>Professional Business Consultancy</h2>
+            <h3>Vix Consultancy</h3>
             <p>Helping businesses achieve excellence through expert guidance and tailored solutions.</p>
-            <a href="#contact" class="cta">Get Started</a>
+            <div class="cta-buttons">
+                <!-- Sign In and Sign Up Buttons -->
+                <button onclick="window.location.href='#sign-in'">Sign In</button>
+                <button onclick="window.location.href='#sign-up'">Sign Up</button>
+            </div>
         </div>
     </section>
 
@@ -33,7 +86,6 @@
         <div class="container">
             <h2>About Us</h2>
             <p>We are a dedicated team of consultants providing strategic advice and support to businesses across various industries.</p>
-            <img src="https://via.placeholder.com/800x500?text=About+Us" alt="About Us" class="responsive-image">
         </div>
     </section>
 
@@ -42,14 +94,17 @@
             <h2>Our Services</h2>
             <div class="service-list">
                 <div class="service">
+                    <img src=./Images/Bg.jpg alt="About Us" class="responsive-image">
                     <h3>Market Analysis</h3>
                     <p>Comprehensive market insights to help your business stay ahead.</p>
                 </div>
                 <div class="service">
+                    <img src=./Images/Bp.jpg alt="About Us" class="responsive-image">
                     <h3>Business Planning</h3>
                     <p>Tailored strategies for sustainable growth and success.</p>
                 </div>
                 <div class="service">
+                    <img src=./Images/Rm.jpg alt="About Us" class="responsive-image">
                     <h3>Risk Management</h3>
                     <p>Identify and mitigate risks effectively with expert advice.</p>
                 </div>
@@ -62,16 +117,16 @@
             <h2>Our Portfolio</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1" class="responsive-image">
-                    <h4>Project Name 1</h4>
+                    <img src=./Images/construction.jpg alt="About Us" class="responsive-image">
+                    <h4>CONSTRUCTION</h4>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2" class="responsive-image">
-                    <h4>Project Name 2</h4>
+                    <img src=./Images/forex.jpg alt="About Us" class="responsive-image">
+                    <h4>FOREX</h4>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300?text=Project+3" alt="Project 3" class="responsive-image">
-                    <h4>Project Name 3</h4>
+                    <img src=./Images/seo.jpg alt="About Us" class="responsive-image">
+                    <h4>SEO</h4>
                 </div>
             </div>
         </div>
@@ -91,7 +146,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Your Consultancy Name. All Rights Reserved.</p>
+            <p>&copy; 2025 VixConsultancy. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
